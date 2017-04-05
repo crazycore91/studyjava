@@ -16,7 +16,7 @@ System.out.println(B);*/
 	//7tsk
 		int A= 5;
 		int B= 7;
-		int C= 19;
+		int C= 9;
 		int Q = A;
 		B=A;
 		A=C;
