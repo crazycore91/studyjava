@@ -12,7 +12,7 @@ A = 7;
 B = 5;
 System.out.println(A);
 System.out.println(B);*/
-	
+	//666
 	//7tsk
 		int A= 4;
 		int B= 6;
