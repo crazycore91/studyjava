@@ -18,8 +18,10 @@ System.out.println(B);*/
 		int B= 6;
 		int C= 8;
 		int Q = A;
-		B=A;
+		Q=A;
 		A=C;
+		C=B;
+		B=Q;
 		System.out.println(A);
 		System.out.println(B);
 		System.out.println(C);
