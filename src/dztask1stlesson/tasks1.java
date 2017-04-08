@@ -1,5 +1,5 @@
 package dztask1stlesson;
-
+import java.util.Scanner;
 public class tasks1 {
 
 	public static void main(String[] args) {
@@ -129,17 +129,17 @@ public class tasks1 {
 
 		// 2 доделать Дано двузначное число. Вывести число, полученное при перестановке цифр исходного числа.
 
-		int x = 32;
+		/*int x = 47;
 		int x1 = x/10;
-		int x2 = x/5;
-		System.out.println(x1);
-		System.out.println(x2);
+		int x2 = x%10;
+		System.out.println(x2+ ""+ x1);*/
+
 
 		//lesson 5
 		//tasks
 		//1
 
-		/* Scanner in = new Scanner(System.in);
+		/*Scanner in = new Scanner(System.in);
 		System.out.println("Введите положительное число");
 		int n = in.nextInt();
 		if (n>0) {
@@ -148,10 +148,8 @@ public class tasks1 {
 		else{
 		System.out.println("Введено не положительное число");
 		}
-		*/
-
-		/*
-		int x= -4;
+*/
+		/*int x= 6;
 		if (x>0) {
 		System.out.println(x+1);
 		}
@@ -189,8 +187,8 @@ public class tasks1 {
 		}*/
 
 		//5th
-	/*	int a = 4;
+		int a = 4;
 		int b = -5;
-		int c = 6; */
+		int c = 6;
 		}
 		}
