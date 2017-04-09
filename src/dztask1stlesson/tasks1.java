@@ -260,7 +260,7 @@ public class tasks1 {
 		}
 		System.out.println("Наименьшее число = " +x);*/
 
-		//6
+		//6 task
 		Scanner in = new Scanner(System.in);
 		System.out.println("Введите номер года:");
 		int a = in.nextInt();
