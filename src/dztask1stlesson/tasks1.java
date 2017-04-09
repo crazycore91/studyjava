@@ -12,8 +12,8 @@ public class tasks1 {
 		B = 5;
 		System.out.println(A);
 		System.out.println(B);*/
-			
-			//7tsk
+
+		//7tsk
 		/*		int A= 4;
 				int B= 6;
 				int C= 8;
@@ -25,23 +25,23 @@ public class tasks1 {
 				System.out.println(A);
 				System.out.println(B);
 				System.out.println(C);*/
-				
-				
-			//task4.1.1
-				//1st
+
+
+		//task4.1.1
+		//1st
 				
 			/*int A = -4;
 			boolean a1 = A >= 0;
 			System.out.println(a1);*/
+
+		//2st
 			
-				//2st
-			
-				/*int A = 4;	
-				boolean a1 = (A%1)==0;
+				/*int A = 4;
+				boolean a1 = (A%2)!=0;
 				System.out.println(a1);*/
-				
-				//3st
-	    //Даны три целых числа: A, B, C. Проверить истинность высказывания: «Справедливо двойное неравенство A < B < C».
+
+		//3st
+		//Даны три целых числа: A, B, C. Проверить истинность высказывания: «Справедливо двойное неравенство A < B < C».
 		/*int A= 21;
 		int B= 22;
 		int C= 30;
@@ -84,7 +84,7 @@ public class tasks1 {
 		int y2 = 10;
 		boolean z = (x1>x)&&(x2>x)&&(y1>y)&&(y2>y);
 		System.out.println(z); */
-		
+
 		//8 - проверить Даны целые числа a, b, c. Проверить истинность высказывания: «Существует треугольник со сторонами a, b, c».
 
      /*	int A= 13;
@@ -92,7 +92,7 @@ public class tasks1 {
 		int C= 8;
 		boolean z = ((A+B-C)>0) && ((B+C-A)>0) &&((C+A-B)>0);
 		System.out.println(z);*/
-		
+
 		//9 - проверить Даны координаты поля шахматной доски x, y (целые числа, лежащие в диапазоне 1–8). 
 		//Учитывая, что левое нижнее поле доски (1, 1) является черным, проверить истинность высказывания: «Данное поле является белым»
 	
@@ -100,7 +100,7 @@ public class tasks1 {
 		int y = 3;
 		boolean c = ((x%3)!=0) && ((y%3)!=0);
 		System.out.println(c); */
-		
+
 		//10 проверить Даны координаты двух различных полей шахматной доски x1, y1, x2, y2 (целые числа, лежащие в диапазоне 1–8). 
 		//Проверить истинность высказывания: «Ферзь за один ход может перейти с одного поля на другое».
 		
@@ -110,8 +110,8 @@ public class tasks1 {
 		int y2 = 6;
 		boolean c = ((x1*y1)>64)&&((x2*y2)>64);
 		System.out.println(c); */
-		
-		
+
+
 		//11
 		// Даны два числа А и В. Поменяйте их местами не используя дополнительную переменную и арифметические операции
 		/*int A = 5;
@@ -119,7 +119,7 @@ public class tasks1 {
 		A=A+B-(B=A);
 		System.out.println(A);
 		System.out.println(B);*/
-		
+
 		//lesson 4.2
 		//1
 
@@ -127,7 +127,7 @@ public class tasks1 {
 		int C = L/100;
 		System.out.println(C);*/
 
-		// 2 доделать Дано двузначное число. Вывести число, полученное при перестановке цифр исходного числа.
+		// 2  Дано двузначное число. Вывести число, полученное при перестановке цифр исходного числа.
 
 		/*int x = 47;
 		int x1 = x/10;
@@ -135,11 +135,32 @@ public class tasks1 {
 		System.out.println(x2+ ""+ x1);*/
 
 
+		// 3 Дано трехзначное число. Вывести число, полученное при прочтении исходного числа справа налево.
+		/*int x = 367;
+		int x1 = x/100;
+		int x2 = x%100/10;
+		int x3 = x%10;
+		System.out.println(x3+""+x2+""+x1);*/
+
+
+		// 4.2.4 Даны целые положительные числа A, B, C. На прямоугольнике раз мера  A × B размещено максимально возможное количество квадратов со стороной C (без наложений).
+		// Найти количество квадратов, размещенных на прямоугольнике, а также площадь незанятой части прямоугольника.
+		// (необходимо пояснение)
+		/*int a = 9;
+		int b = 8;
+		int c = 22;
+		int Q = (a/c)*(b/c);
+		int Z = a*(b%c)+b*(a%c)-(b%c)+(a%c);
+		System.out.println("количество = " + Q);
+		System.out.println("ploscghad' = "+Z);*/
+
+
 		//lesson 5
 		//tasks
-		//1
 
-		/*Scanner in = new Scanner(System.in);
+		//1
+/*
+		Scanner in = new Scanner(System.in);
 		System.out.println("Введите положительное число");
 		int n = in.nextInt();
 		if (n>0) {
@@ -149,20 +170,17 @@ public class tasks1 {
 		System.out.println("Введено не положительное число");
 		}
 */
-		/*int x= 6;
-		if (x>0) {
-		System.out.println(x+1);
-		}
-		else{
-		System.out.println(x);
-		}*/
+
 
 		//3st
-		/* int a = 4;
-		int b = -5;
-		int c = 6;
-		Scanner in = new Scanner(System.in);
-		int x =0;
+		/*Scanner in = new Scanner(System.in);
+		System.out.println("Введите первое число:");
+		int a = in.nextInt();
+		System.out.println("Введите второе число:");
+		int b = in.nextInt();
+		System.out.println("Введите третье число:");
+		int c = in.nextInt();
+		int x = 0;
 		if (a>0) {
 		++x;
 		}
@@ -172,23 +190,92 @@ public class tasks1 {
 		if (c>0) {
 		++x;
 		}
-		System.out.println(x);*/
+		System.out.println("Колличество положительных чисел = " +x);*/
 
 		//2nd
-		/* int x= 0;
+		/*Scanner in = new Scanner(System.in);
+		System.out.println("Введите целое число:");
+		int x = in.nextInt();
 		if (x>0) {
 		System.out.println(x+1);
-		if(x<0) {
+		}
+		if (x<0) {
 		System.out.println(x-2);
 		}
+		if (x==0) {
+		System.out.println(10);
+		}
+		System.out.println("Программа закончила свое выполнение");*/
+
+
+		//4th
+		/*Scanner in = new Scanner(System.in);
+		System.out.println("Введите первое число:");
+		int a = in.nextInt();
+		System.out.println("Введите второе число:");
+		int b = in.nextInt();
+		System.out.println("Введите третье число:");
+		int c = in.nextInt();
+		int x = 0;
+		int y = 0;
+		if (a>0) {
+		++x;
 		}
 		else{
-		System.out.println(10);
-		}*/
+			++y;
+			}
+		if (b>0) {
+		++x;
+		}
+		else{
+			++y;
+		}
+		if (c>0) {
+		++x;
+		}
+		else{
+			++y;
+		}
+		System.out.println("Колличество положительных чисел = " +x);
+		System.out.println("Колличество отрицательныз чисел = " +y);*/
 
-		//5th
-		int a = 4;
-		int b = -5;
-		int c = 6;
+		//5
+
+/*		Scanner in = new Scanner(System.in);
+		System.out.println("Введите первое число:");
+		int a = in.nextInt();
+		System.out.println("Введите второе число:");
+		int b = in.nextInt();
+		System.out.println("Введите третье число:");
+		int c = in.nextInt();
+		int x = a;
+		if (x>b){
+			x=b;
 		}
+		if (x>c){
+			x=c;
 		}
+		if (x>a){
+			x=a;
+		}
+		System.out.println("Наименьшее число = " +x);*/
+
+		//6
+		Scanner in = new Scanner(System.in);
+		System.out.println("Введите номер года:");
+		int a = in.nextInt();
+		int d = 0;
+		if (a%4==0){
+			d=366;
+		}
+		if ((a%100==0)&&(a%400!=0)){
+			d=365;
+		}
+		else
+		{
+			d=365;
+		}
+		System.out.println("Номер года "+a+" имеет "+ d + " дней в году" );
+		}
+
+	}
