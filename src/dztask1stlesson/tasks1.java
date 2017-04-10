@@ -240,8 +240,7 @@ public class tasks1 {
 		System.out.println("Колличество положительных чисел = " +x);
 		System.out.println("Колличество отрицательныз чисел = " +y);*/
 
-		//5
-
+		//5 task
 /*		Scanner in = new Scanner(System.in);
 		System.out.println("Введите первое число:");
 		int a = in.nextInt();
@@ -291,7 +290,8 @@ public class tasks1 {
 			if(a%4!=0){
 				System.out.println("Номер года "+a+" имеет "+ 365 + " дней в году" );
 			}*/
-		// 7task
+
+        // 7task
 	/*	Scanner in = new Scanner(System.in);
 		System.out.println("Введите любое целое число от 1 до 999:");
 		int a = in.nextInt();
@@ -307,9 +307,60 @@ public class tasks1 {
 		if ((a<=999)&&(a>99)&&(a%2==0)){
 			System.out.println(a+" - данное число, является четным, двухзначным");
 			}*/
+
 		// 8task
-		Scanner in = new Scanner(System.in);
-		System.out.println("Введите день недели, используя число от 1- до 7:");
+		/*Scanner in = new Scanner(System.in);
+		System.out.println("Введите день недели, используя число от 1 до 7:");
 		int a = in.nextInt();
+		switch (a) {
+		case 1: System.out.println(a+" - понедельник"); break;
+		case 2: System.out.println(a+" - вторник"); break;
+		case 3: System.out.println(a+" - среда"); break;
+		case 4: System.out.println(a+" - четверг"); break;
+		case 5: System.out.println(a+" - пятница"); break;
+		case 6: System.out.println(a+" - суббота"); break;
+		case 7: System.out.println(a+" - воскресенье"); break;
+		default:System.out.println("Введено число не принадлежащее диапазону от 1 до 7"); break;
+		}*/
+
+		// 9task
+	/*	Scanner in = new Scanner(System.in);
+		System.out.println("Введите число от 1 до 5:");
+		int K = in.nextInt();
+		switch (K) {
+			case 1: System.out.println(K+" - плохо"); break;
+			case 2: System.out.println(K+" - неудовлетворительно"); break;
+			case 3: System.out.println(K+" - удовлетворительно"); break;
+			case 4: System.out.println(K+" - хорошо"); break;
+			case 5: System.out.println(K+" - отлично"); break;
+			default:System.out.println("Введено число не принадлежащее диапазону от 1 до 5"); break;
+		}*/
+
+		Scanner in = new Scanner(System.in);
+		System.out.println("Введите число от 1 до 5:");
+		int a = in.nextInt();
+		System.out.println("Введите длинну отрезка:");
+		int b = in.nextInt();
+		switch (a) {
+			case 1:
+				System.out.println("Ваша единица измерения - дециметр, длинна отрезка "+(1*0.1)*b +" м");
+				break;
+			case 2:
+				System.out.println("Ваша единица измерения - киллометр, длинна отрезка "+b*1000 +" м");
+				break;
+			case 3:
+				System.out.println("Ваша единица измерения - метр, длинна отрезка "+1*b +" м");
+				break;
+			case 4:
+				System.out.println("Ваша единица измерения - миллиметр, длинна отрезка "+b/1000 +" м");
+				break;
+			case 5:
+				System.out.println("Ваша единица измерения - сантиметр, длинна отрезка "+b/100 +" м");
+				break;
+			default:
+				System.out.println("Введеное число не соответствует корректным параметрам ");
+				break;
+		}
 	}
+
 }
