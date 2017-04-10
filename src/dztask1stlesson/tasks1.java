@@ -3,6 +3,7 @@ import java.util.Scanner;
 public class tasks1 {
 
 	public static void main(String[] args) {
+
 		/*int A= 5;
 		int B= 7;
 		int C = A;
@@ -29,13 +30,13 @@ public class tasks1 {
 
 		//task4.1.1
 		//1st
-				
+
 			/*int A = -4;
 			boolean a1 = A >= 0;
 			System.out.println(a1);*/
 
 		//2st
-			
+
 				/*int A = 4;
 				boolean a1 = (A%2)!=0;
 				System.out.println(a1);*/
@@ -61,8 +62,8 @@ public class tasks1 {
 		/*int A= 3;
 		int B= -7;
 		int C= 8;
-		boolean a1 =((A > 0) && (B < 0 ) && (C < 0)) || 
-		((A < 0) && (B > 0 ) && (C < 0)) || 
+		boolean a1 =((A > 0) && (B < 0 ) && (C < 0)) ||
+		((A < 0) && (B > 0 ) && (C < 0)) ||
 		((A < 0) && (B < 0 ) && (C > 0));
 		System.out.println(a1);*/
 
@@ -74,13 +75,13 @@ public class tasks1 {
 		*/
 
 		//7 проверить -Даны числа x, y, x1, y1, x2, y2. Проверить истинность высказывания:«Точка с координатами (x, y) лежит внутри прямоугольника, левая верхняя вершина которого имеет координаты (x1, y1), правая нижняя — (x2, y2), а стороны параллельны координатным осям».
-		
 
-	/*	int x = 20; 
-	    int y = 5; 
-		int x1 = 18; 
-		int x2 = 16; 
-		int y1 = 8; 
+
+	/*	int x = 20;
+	    int y = 5;
+		int x1 = 18;
+		int x2 = 16;
+		int y1 = 8;
 		int y2 = 10;
 		boolean z = (x1>x)&&(x2>x)&&(y1>y)&&(y2>y);
 		System.out.println(z); */
@@ -93,17 +94,17 @@ public class tasks1 {
 		boolean z = ((A+B-C)>0) && ((B+C-A)>0) &&((C+A-B)>0);
 		System.out.println(z);*/
 
-		//9 - проверить Даны координаты поля шахматной доски x, y (целые числа, лежащие в диапазоне 1–8). 
+		//9 - проверить Даны координаты поля шахматной доски x, y (целые числа, лежащие в диапазоне 1–8).
 		//Учитывая, что левое нижнее поле доски (1, 1) является черным, проверить истинность высказывания: «Данное поле является белым»
-	
+
 		/*	int x = 4;
 		int y = 3;
 		boolean c = ((x%3)!=0) && ((y%3)!=0);
 		System.out.println(c); */
 
-		//10 проверить Даны координаты двух различных полей шахматной доски x1, y1, x2, y2 (целые числа, лежащие в диапазоне 1–8). 
+		//10 проверить Даны координаты двух различных полей шахматной доски x1, y1, x2, y2 (целые числа, лежащие в диапазоне 1–8).
 		//Проверить истинность высказывания: «Ферзь за один ход может перейти с одного поля на другое».
-		
+
 	/*	int x1 = 3;
 		int y1 = 4;
 		int x2 = 5;
@@ -260,22 +261,55 @@ public class tasks1 {
 		}
 		System.out.println("Наименьшее число = " +x);*/
 
-		//6 task
-		Scanner in = new Scanner(System.in);
+		//6 task 1st method
+		/*Scanner in = new Scanner(System.in);
 		System.out.println("Введите номер года:");
 		int a = in.nextInt();
 		int d = 0;
-		if (a%4==0){
-			d=366;
-		}
-		if ((a%100==0)&&(a%400!=0)){
+		if ((a%4==0)&&(a%100==0)&&(a%400!=0)){
 			d=365;
+		}
+		if ((a%4==0)&&(a%400==0)){
+			d=366;
 		}
 		else
 		{
 			d=365;
 		}
-		System.out.println("Номер года "+a+" имеет "+ d + " дней в году" );
-		}
+		System.out.println("Номер года "+a+" имеет "+ d + " дней в году" );*/
 
+		//1st method
+/*			Scanner in = new Scanner(System.in);
+			System.out.println("Введите номер года:");
+			int a = in.nextInt();
+			if ((a%4==0)&&(a%100==0)&&(a%400!=0)){
+				System.out.println("Номер года "+a+" имеет "+ 365 + " дней в году" );
+			}
+			if ((a%4==0)&&(a%400==0)){
+				System.out.println("Номер года "+a+" имеет "+ 366 + " дней в году" );
+			}
+			if(a%4!=0){
+				System.out.println("Номер года "+a+" имеет "+ 365 + " дней в году" );
+			}*/
+		// 7task
+	/*	Scanner in = new Scanner(System.in);
+		System.out.println("Введите любое целое число от 1 до 999:");
+		int a = in.nextInt();
+		if ((a<99)&&(a>9)&&(a%2!=0)){
+		System.out.println(a+" - данное число, является нечетным, двухзначным");
+		}
+		if ((a<99)&&(a>9)&&(a%2==0)){
+			System.out.println(a+" - данное число, является четным, двухзначным");
+			}
+		if ((a<=999)&&(a>99)&&(a%2!=0)){
+			System.out.println(a+" - данное число, является нечетным, двухзначным");
+			}
+		if ((a<=999)&&(a>99)&&(a%2==0)){
+			System.out.println(a+" - данное число, является четным, двухзначным");
+			}*/
+		// 8task
+		Scanner in = new Scanner(System.in);
+		System.out.println("Введите день недели, используя число от 1- до 7:");
+		int a = in.nextInt();
 	}
+}
