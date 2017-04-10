@@ -336,6 +336,8 @@ public class tasks1 {
 			default:System.out.println("Введено число не принадлежащее диапазону от 1 до 5"); break;
 		}*/
 
+       // 10 task
+
 		Scanner in = new Scanner(System.in);
 		System.out.println("Введите число от 1 до 5:");
 		int a = in.nextInt();
