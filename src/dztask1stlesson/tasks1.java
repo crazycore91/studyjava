@@ -343,7 +343,7 @@ public class tasks1 {
 		int b = in.nextInt();
 		switch (a) {
 			case 1:
-				System.out.println("Ваша единица измерения - дециметр, длинна отрезка "+(1*0.1)*b +" м");
+				System.out.println("Ваша единица измерения - дециметр, длинна отрезка "+0.1*b +" м");
 				break;
 			case 2:
 				System.out.println("Ваша единица измерения - киллометр, длинна отрезка "+b*1000 +" м");
