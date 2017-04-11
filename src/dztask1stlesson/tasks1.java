@@ -338,7 +338,7 @@ public class tasks1 {
 
        // 10 task
 
-		Scanner in = new Scanner(System.in);
+/*		Scanner in = new Scanner(System.in);
 		System.out.println("Введите число от 1 до 5:");
 		int a = in.nextInt();
 		System.out.println("Введите длинну отрезка:");
@@ -362,7 +362,7 @@ public class tasks1 {
 			default:
 				System.out.println("Введеное число не соответствует корректным параметрам ");
 				break;
-		}
+		}*/
 	}
 
 }
