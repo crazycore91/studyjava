@@ -365,7 +365,13 @@ public class tasks1 {
 		}*/
 		
 		//less 5.02 1st task
-		
+		int A = 33;
+		int B = 54;
+		int N = 0;
+        for(int s =A;s<=B;s++){
+        	if(s==B) break;
+        	System.out.println(s);
+        }
 	}
 
 }
