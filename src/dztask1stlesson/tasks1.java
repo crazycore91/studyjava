@@ -292,7 +292,7 @@ public class tasks1 {
 			}*/
 
         // 7task
-	/*	Scanner in = new Scanner(System.in);
+/*		Scanner in = new Scanner(System.in);
 		System.out.println("Введите любое целое число от 1 до 999:");
 		int a = in.nextInt();
 		if ((a<99)&&(a>9)&&(a%2!=0)){
@@ -302,10 +302,10 @@ public class tasks1 {
 			System.out.println(a+" - данное число, является четным, двухзначным");
 			}
 		if ((a<=999)&&(a>99)&&(a%2!=0)){
-			System.out.println(a+" - данное число, является нечетным, двухзначным");
+			System.out.println(a+" - данное число, является нечетным, трехзначным");
 			}
 		if ((a<=999)&&(a>99)&&(a%2==0)){
-			System.out.println(a+" - данное число, является четным, двухзначным");
+			System.out.println(a+" - данное число, является четным, трехзначным");
 			}*/
 
 		// 8task
@@ -338,7 +338,7 @@ public class tasks1 {
 
        // 10 task
 
-		Scanner in = new Scanner(System.in);
+/*		Scanner in = new Scanner(System.in);
 		System.out.println("Введите число от 1 до 5:");
 		int a = in.nextInt();
 		System.out.println("Введите длинну отрезка:");
@@ -362,7 +362,10 @@ public class tasks1 {
 			default:
 				System.out.println("Введеное число не соответствует корректным параметрам ");
 				break;
-		}
+		}*/
+		
+		//less 5.02 1st task
+		
 	}
 
 }
