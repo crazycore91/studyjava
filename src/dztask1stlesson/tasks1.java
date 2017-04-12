@@ -448,7 +448,7 @@ public class tasks1 {
 		Scanner in = new Scanner(System.in);
 		System.out.println("Введите число 0 < P < 25:");
 		int P = in.nextInt();
-		int i = 1000;
+		int a = 1000;
 		int S;
 		int K;
 		
