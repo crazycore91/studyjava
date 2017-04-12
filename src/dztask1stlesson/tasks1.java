@@ -105,11 +105,11 @@ public class tasks1 {
 		//10 проверить Даны координаты двух различных полей шахматной доски x1, y1, x2, y2 (целые числа, лежащие в диапазоне 1–8).
 		//Проверить истинность высказывания: «Ферзь за один ход может перейти с одного поля на другое».
 
-	/*	int x1 = 3;
+		/* int x1 = 3;
 		int y1 = 4;
 		int x2 = 5;
 		int y2 = 6;
-		boolean c = ((x1*y1)>64)&&((x2*y2)>64);
+		boolean c = ((x1+y1)>8)&&((x2+y2)>8);
 		System.out.println(c); */
 
 
@@ -128,7 +128,7 @@ public class tasks1 {
 		int C = L/100;
 		System.out.println(C);*/
 
-		// 2  Дано двузначное число. Вывести число, полученное при перестановке цифр исходного числа.
+		// 2 Дано двузначное число. Вывести число, полученное при перестановке цифр исходного числа.
 
 		/*int x = 47;
 		int x1 = x/10;
@@ -144,7 +144,7 @@ public class tasks1 {
 		System.out.println(x3+""+x2+""+x1);*/
 
 
-		// 4.2.4 Даны целые положительные числа A, B, C. На прямоугольнике раз мера  A × B размещено максимально возможное количество квадратов со стороной C (без наложений).
+		// 4.2.4 Даны целые положительные числа A, B, C. На прямоугольнике раз мера A × B размещено максимально возможное количество квадратов со стороной C (без наложений).
 		// Найти количество квадратов, размещенных на прямоугольнике, а также площадь незанятой части прямоугольника.
 		// (необходимо пояснение)
 		/*int a = 9;
@@ -160,7 +160,7 @@ public class tasks1 {
 		//tasks
 
 		//1
-/*
+		/*
 		Scanner in = new Scanner(System.in);
 		System.out.println("Введите положительное число");
 		int n = in.nextInt();
@@ -170,7 +170,7 @@ public class tasks1 {
 		else{
 		System.out.println("Введено не положительное число");
 		}
-*/
+		*/
 
 
 		//3st
@@ -223,25 +223,25 @@ public class tasks1 {
 		++x;
 		}
 		else{
-			++y;
-			}
+		++y;
+		}
 		if (b>0) {
 		++x;
 		}
 		else{
-			++y;
+		++y;
 		}
 		if (c>0) {
 		++x;
 		}
 		else{
-			++y;
+		++y;
 		}
 		System.out.println("Колличество положительных чисел = " +x);
 		System.out.println("Колличество отрицательныз чисел = " +y);*/
 
 		//5 task
-/*		Scanner in = new Scanner(System.in);
+		/* Scanner in = new Scanner(System.in);
 		System.out.println("Введите первое число:");
 		int a = in.nextInt();
 		System.out.println("Введите второе число:");
@@ -250,13 +250,13 @@ public class tasks1 {
 		int c = in.nextInt();
 		int x = a;
 		if (x>b){
-			x=b;
+		x=b;
 		}
 		if (x>c){
-			x=c;
+		x=c;
 		}
 		if (x>a){
-			x=a;
+		x=a;
 		}
 		System.out.println("Наименьшее число = " +x);*/
 
@@ -266,47 +266,50 @@ public class tasks1 {
 		int a = in.nextInt();
 		int d = 0;
 		if ((a%4==0)&&(a%100==0)&&(a%400!=0)){
-			d=365;
+		d=365;
 		}
 		if ((a%4==0)&&(a%400==0)){
-			d=366;
+		d=366;
 		}
 		else
 		{
-			d=365;
+		d=365;
 		}
 		System.out.println("Номер года "+a+" имеет "+ d + " дней в году" );*/
 
 		//1st method
-/*			Scanner in = new Scanner(System.in);
-			System.out.println("Введите номер года:");
-			int a = in.nextInt();
-			if ((a%4==0)&&(a%100==0)&&(a%400!=0)){
-				System.out.println("Номер года "+a+" имеет "+ 365 + " дней в году" );
-			}
-			if ((a%4==0)&&(a%400==0)){
-				System.out.println("Номер года "+a+" имеет "+ 366 + " дней в году" );
-			}
-			if(a%4!=0){
-				System.out.println("Номер года "+a+" имеет "+ 365 + " дней в году" );
-			}*/
-
-        // 7task
-/*		Scanner in = new Scanner(System.in);
+		/* Scanner in = new Scanner(System.in);
+		System.out.println("Введите номер года:");
+		int a = in.nextInt();
+		if ((a%4==0)&&(a%100==0)&&(a%400!=0)){
+		System.out.println("Номер года "+a+" имеет "+ 365 + " дней в году" );
+		}
+		if ((a%4==0)&&(a%400==0)){
+		System.out.println("Номер года "+a+" имеет "+ 366 + " дней в году" );
+		}
+		if(a%4!=0){
+		System.out.println("Номер года "+a+" имеет "+ 365 + " дней в году" );
+		}
+		if(a%4==0){
+		System.out.println("Номер года "+a+" имеет "+ 366 + " дней в году" );
+		}
+		*/
+		// 7task
+		/* Scanner in = new Scanner(System.in);
 		System.out.println("Введите любое целое число от 1 до 999:");
 		int a = in.nextInt();
 		if ((a<99)&&(a>9)&&(a%2!=0)){
 		System.out.println(a+" - данное число, является нечетным, двухзначным");
 		}
 		if ((a<99)&&(a>9)&&(a%2==0)){
-			System.out.println(a+" - данное число, является четным, двухзначным");
-			}
+		System.out.println(a+" - данное число, является четным, двухзначным");
+		}
 		if ((a<=999)&&(a>99)&&(a%2!=0)){
-			System.out.println(a+" - данное число, является нечетным, трехзначным");
-			}
+		System.out.println(a+" - данное число, является нечетным, трехзначным");
+		}
 		if ((a<=999)&&(a>99)&&(a%2==0)){
-			System.out.println(a+" - данное число, является четным, трехзначным");
-			}*/
+		System.out.println(a+" - данное число, является четным, трехзначным");
+		}*/
 
 		// 8task
 		/*Scanner in = new Scanner(System.in);
@@ -324,54 +327,128 @@ public class tasks1 {
 		}*/
 
 		// 9task
-	/*	Scanner in = new Scanner(System.in);
+		/* Scanner in = new Scanner(System.in);
 		System.out.println("Введите число от 1 до 5:");
 		int K = in.nextInt();
 		switch (K) {
-			case 1: System.out.println(K+" - плохо"); break;
-			case 2: System.out.println(K+" - неудовлетворительно"); break;
-			case 3: System.out.println(K+" - удовлетворительно"); break;
-			case 4: System.out.println(K+" - хорошо"); break;
-			case 5: System.out.println(K+" - отлично"); break;
-			default:System.out.println("Введено число не принадлежащее диапазону от 1 до 5"); break;
+		case 1: System.out.println(K+" - плохо"); break;
+		case 2: System.out.println(K+" - неудовлетворительно"); break;
+		case 3: System.out.println(K+" - удовлетворительно"); break;
+		case 4: System.out.println(K+" - хорошо"); break;
+		case 5: System.out.println(K+" - отлично"); break;
+		default:System.out.println("Введено число не принадлежащее диапазону от 1 до 5"); break;
 		}*/
 
-       // 10 task
+		// 10 task
 
-/*		Scanner in = new Scanner(System.in);
+		/* Scanner in = new Scanner(System.in);
 		System.out.println("Введите число от 1 до 5:");
 		int a = in.nextInt();
 		System.out.println("Введите длинну отрезка:");
 		int b = in.nextInt();
 		switch (a) {
-			case 1:
-				System.out.println("Ваша единица измерения - дециметр, длинна отрезка "+0.1*b +" м");
-				break;
-			case 2:
-				System.out.println("Ваша единица измерения - киллометр, длинна отрезка "+b*1000 +" м");
-				break;
-			case 3:
-				System.out.println("Ваша единица измерения - метр, длинна отрезка "+1*b +" м");
-				break;
-			case 4:
-				System.out.println("Ваша единица измерения - миллиметр, длинна отрезка "+b/1000.000 +" м");
-				break;
-			case 5:
-				System.out.println("Ваша единица измерения - сантиметр, длинна отрезка "+b/100.00 +" м");
-				break;
-			default:
-				System.out.println("Введеное число не соответствует корректным параметрам ");
-				break;
+		case 1:
+		System.out.println("Ваша единица измерения - дециметр, длинна отрезка "+0.1*b +" м");
+		break;
+		case 2:
+		System.out.println("Ваша единица измерения - киллометр, длинна отрезка "+b*1000 +" м");
+		break;
+		case 3:
+		System.out.println("Ваша единица измерения - метр, длинна отрезка "+1*b +" м");
+		break;
+		case 4:
+		System.out.println("Ваша единица измерения - миллиметр, длинна отрезка "+b/1000.000 +" м");
+		break;
+		case 5:
+		System.out.println("Ваша единица измерения - сантиметр, длинна отрезка "+b/100.00 +" м");
+		break;
+		default:
+		System.out.println("Введеное число не соответствует корректным параметрам ");
+		break;
 		}*/
-		
-		//less 5.02 1st task
-		int A = 33;
-		int B = 54;
-		int N = 0;
-        for(int s =A;s<=B;s++){
-        	if(s==B) break;
-        	System.out.println(s);
-        }
-	}
 
-}
+
+		/*int K = 15;
+		int M = 4;
+		int C = (M+K-1)/M;
+		System.out.println(C);*/
+
+
+		//less 6.02 1st task 1st method
+
+		/*Scanner in = new Scanner(System.in);
+		System.out.println("Введите число A:");
+		int A = in.nextInt();
+		System.out.println("Введите число B");
+		int B = in.nextInt();
+		for(int s =A;s<B;s++){
+		System.out.println(s);
+		}
+		System.out.println("Колличество чисел = " + (B-A));*/
+
+		//2st method
+		/* Scanner in = new Scanner(System.in);
+		System.out.println("Введите число A:");
+		int A = in.nextInt();
+		System.out.println("Введите число B");
+		int B = in.nextInt();
+		int s = A;
+		do {
+		System.out.println(s);s++;
+		}
+		while (s<B);
+		System.out.println("Колличество чисел = " + (B-A));*/
+
+		//2task 
+/*		 Scanner in = new Scanner(System.in);
+		System.out.println("Введите число A:");
+		int A = in.nextInt();
+		System.out.println("Введите число B");
+		int B = in.nextInt();
+		int s = B-1;
+		while (s>A){
+		System.out.println(s);s--;
+		}
+		System.out.println("Колличество чисел = " + (B-A));
+*/
+		//3task доделать
+		 Scanner in = new Scanner(System.in);
+		System.out.println("Введите число A:");
+		int A = in.nextInt();
+		System.out.println("Введите число B");
+		int B = in.nextInt();
+		int s = A;
+		while(s>B){
+		System.out.println(A-s);s--;
+		}
+		System.out.println("Колличество чисел = " + (B-(-A)));
+
+		//less 1_7 1st
+		/*2. Дано целое число N (> 0). Найти произведение
+		N! = 1·2·…·N
+		(N–факториал). Чтобы избежать целочисленного переполнения, вычислять это произведение
+		с помощью вещественной переменной и вывести его как вещественное число.*/
+
+		/* Scanner in = new Scanner(System.in);
+		System.out.println("Введите число N(N>0):");
+		int N = in.nextInt();
+		int x = 1;
+		for(double i =2; i<=N; i++)
+		x *= i;
+		System.out.println(x);*/
+
+		/* 1. Дано целое число N (> 0). Найти значение выражения
+		1 – 2 + 3 – …
+		(N слагаемых, знаки чередуются). Условный оператор не использовать.*/
+
+	/*	Scanner in = new Scanner(System.in);
+		System.out.println("Введите число N(N>0):");
+		int N = in.nextInt();
+		int x = 1;
+		for(int i = 1;x<N;i++)
+		while(x>N){
+		x -= i;
+		}
+		System.out.println(x);*/
+		}
+	}
