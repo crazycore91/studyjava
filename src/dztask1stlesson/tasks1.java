@@ -1,5 +1,6 @@
 package dztask1stlesson;
 import java.util.Scanner;
+import java.lang.Math;
 public class tasks1 {
 
 	public static void main(String[] args) {
@@ -411,8 +412,8 @@ public class tasks1 {
 		}
 		System.out.println("Колличество чисел = " + (B-A));
 */
-		//3task доделать
-		 Scanner in = new Scanner(System.in);
+		//3task на проверку
+	/*	 Scanner in = new Scanner(System.in);
 		System.out.println("Введите число A:");
 		int A = in.nextInt();
 		System.out.println("Введите число B");
@@ -421,8 +422,36 @@ public class tasks1 {
 		while(s>B){
 		System.out.println(A-s);s--;
 		}
-		System.out.println("Колличество чисел = " + (B-(-A)));
-
+		System.out.println("Колличество чисел = " + (A-B));*/
+		
+		//4task на проверку
+		/* Дано целое число N (> 3). Если оно является степенью числа 3, то вывести True, если не
+          является — вывести False. */
+		
+	/*	Scanner in = new Scanner(System.in);
+		System.out.println("Введите число N:");
+		int N = in.nextInt();
+	    while((Math.pow(N, 3))%3!=0){
+			System.out.println(false);
+			if (((Math.pow(N, 3))%3!=0)) break;
+		}
+		while((Math.pow(N, 3))%3==0){
+			System.out.println(true);
+			if (((Math.pow(N, 3))%3==0)) break;
+		}*/
+		
+	/*	5.Начальный вклад в банке равен 1000 руб. Через каждый месяц раз мер вклада увеличивается на
+		P процентов от имеющейся суммы (P — вещественное число, 0 < P < 25). По данному P
+		определить, через сколько месяцев размер вклада превысит 1100 руб., и вывести найденное
+		количество месяцев K (целое число) и итоговый размер вклада S (вещественное число).*/
+		
+		Scanner in = new Scanner(System.in);
+		System.out.println("Введите число 0 < P < 25:");
+		int P = in.nextInt();
+		int i = 1000;
+		int S;
+		int K;
+		
 		//less 1_7 1st
 		/*2. Дано целое число N (> 0). Найти произведение
 		N! = 1·2·…·N
@@ -451,4 +480,4 @@ public class tasks1 {
 		}
 		System.out.println(x);*/
 		}
-	}
+}
