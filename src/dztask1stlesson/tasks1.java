@@ -501,7 +501,7 @@ public class tasks1 {
 			1 – 2 + 3 – …
 			(N слагаемых, знаки чередуются). Условный оператор не использовать.*/
 
-			Scanner in = new Scanner(System.in);
+		/*	Scanner in = new Scanner(System.in);
 			System.out.println("Введите число N(N>0):");
 			int N = in.nextInt();
 			int x = 1;
@@ -509,7 +509,7 @@ public class tasks1 {
 			while(x>N){
 			x -= i;
 			}
-			System.out.println(x);
+			System.out.println(x);*/
 	    }
 	}
 
