@@ -483,7 +483,7 @@ public class tasks1 {
 	            System.out.print(n);*/
 	            
 	            
-	        //less 1_7 1st
+			//less 1_7 1st
 			/*2. Дано целое число N (> 0). Найти произведение
 			N! = 1·2·…·N
 			(N–факториал). Чтобы избежать целочисленного переполнения, вычислять это произведение
@@ -498,18 +498,60 @@ public class tasks1 {
 			System.out.println(x);*/
 
 			/* 1. Дано целое число N (> 0). Найти значение выражения
-			1 – 2 + 3 – …
-			(N слагаемых, знаки чередуются). Условный оператор не использовать.*/
-
-		/*	Scanner in = new Scanner(System.in);
+			1 – 2 + 3 – … (N слагаемых, знаки чередуются). Условный оператор не использовать.*/
+			// дома доделать
+			/*Scanner in = new Scanner(System.in);
 			System.out.println("Введите число N(N>0):");
 			int N = in.nextInt();
-			int x = 1;
-			for(int i = 1;x<N;i++)
-			while(x>N){
-			x -= i;
-			}
-			System.out.println(x);*/
-	    }
-	}
+			int x = 1,y=0;
+			for(int i = x;(i<N);i++)
+			y = i*(-1);
+			System.out.println(y);*/
 
+
+			// 8 lesson massive
+			//Math.random()
+			//Вести н - элементов из целых чисел в диапазоне от 20 до 50
+
+			/* int list[] = {1,3,5,7,9,8,6,2,0};
+			for(int i = 0; i<list.length; i++){
+			System.out.println(list[i]);
+			}*/
+			//1. task
+			/* Scanner in = new Scanner(System.in);
+			System.out.println("Введите число n(колличество чисел):");
+			int n = in.nextInt();
+			int [] mas = new int[n]; // числа введенные с клавиатуры
+			for(int i = 0; i<mas.length; i++){
+			mas[i]=(int)(Math.random()*30)+20;// сложение перемещает, умножение расширить
+			System.out.print(mas[i]+" ");
+			}*/
+
+			/* Дано целое число N (> 0). Сформировать и вывести целочисленный
+			массив размера N, содержащий N первых положительных нечетных чисел:
+			1, 3, 5, … .*/
+
+			/* Scanner in = new Scanner(System.in);
+			System.out.println("Введите число n(колличество чисел):");
+			int N = in.nextInt();
+			int [] mas = new int[N];// создали заполнили 0 нулями 
+			for(int i = 0; i<N; i++){
+			mas[i]=2*i+1;
+			System.out.print(mas[i]+" ");
+			}*/
+
+			/*2. Дан массив размера N. Вывести его элементы в обратном порядке. */
+
+			Scanner in = new Scanner(System.in);
+			System.out.println("Введите число n(колличество чисел):");
+			int N = in.nextInt();
+			int [] mas = new int[N];
+			for(int i = 0; i<N; i++){
+			mas[i]=i;
+			//System.out.print(mas[i]+" ");
+			} 
+			for(int i = 0;i!=0;i--){
+			System.out.print(mas[i]+" ");
+			}
+		}
+}
