@@ -483,7 +483,7 @@ public class tasks1 {
 
         // 7. Найти число Фибоначчи под номером N.
 
-        Scanner in = new Scanner(System.in);
+     /*   Scanner in = new Scanner(System.in);
         System.out.println("Введите любое число:");
         int n = in.nextInt();
         int a = 1, b=1;
@@ -495,7 +495,7 @@ public class tasks1 {
             b = fib;
             i+=1;
         }System.out.println(fib);
-
+*/
 
         //less 1_7 1st
 			/*2. Дано целое число N (> 0). Найти произведение
@@ -514,13 +514,13 @@ public class tasks1 {
 			/* 1. Дано целое число N (> 0). Найти значение выражения
 			1 – 2 + 3 – … (N слагаемых, знаки чередуются). Условный оператор не использовать.*/
         // дома доделать
-		/*	Scanner in = new Scanner(System.in);
+			Scanner in = new Scanner(System.in);
 			System.out.println("Введите число N(N>0):");
 			int N = in.nextInt();
 			int x = 1,y=0;
 			for(int i = x;(i<N);i++)
 			y = i*(-1);
-			System.out.println(y);*/
+			System.out.println(y);
 
 
         // 8 lesson massive
