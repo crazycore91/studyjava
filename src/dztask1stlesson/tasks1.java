@@ -1,7 +1,5 @@
 package dztask1stlesson;
 import java.util.Scanner;
-import java.lang.Math;
-import java.time.Year;
 public class tasks1 {
 
     public static void main(String[] args) {
@@ -530,7 +528,7 @@ public class tasks1 {
 			/*Даны целые числа A и B (A < B). Вывести все целые числа от A до B включительно; при этом
 			число A должно выводиться 1 раз, число A + 1 должно выводиться 2 раза и т. д.*/
 			
-			Scanner in = new Scanner(System.in);
+	/*		Scanner in = new Scanner(System.in);
 			System.out.println("Введите число A");
 			int A = in.nextInt();
 			System.out.println("Введите число B:");
@@ -539,7 +537,14 @@ public class tasks1 {
 				for(int j = A-1;j<i;j++){
 					System.out.print(i + " ");
 				}
-			}
+			}*/
+			
+    	/*Дано целое число N (> 1). Если оно является простым, то есть не имеет положительных
+    	делителей, кроме 1 и самого себя, то вывести True, иначе вывести False.*/
+    	
+			Scanner in = new Scanner(System.in);
+			System.out.println("Введите число N>1:");
+			int N = in.nextInt();
 
         // 8 lesson massive
         //Math.random()
