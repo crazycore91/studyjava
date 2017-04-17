@@ -1,5 +1,7 @@
 package dztask1stlesson;
 import java.util.Scanner;
+import java.lang.Math;
+import java.time.Year;
 public class tasks1 {
 
     public static void main(String[] args) {
@@ -513,15 +515,31 @@ public class tasks1 {
 
 			/* 1. Дано целое число N (> 0). Найти значение выражения
 			1 – 2 + 3 – … (N слагаемых, знаки чередуются). Условный оператор не использовать.*/
-        // дома доделать
-			Scanner in = new Scanner(System.in);
+        
+    	// на проверку
+		/*	Scanner in = new Scanner(System.in);
 			System.out.println("Введите число N(N>0):");
 			int N = in.nextInt();
-			int x = 1,y=0;
-			for(int i = x;(i<N);i++)
-			y = i*(-1);
-			System.out.println(y);
+			int x = 0;
+			int y = 1;
+			for(int i = 1;i<=N;i++){
+			x +=y*i;
+			y*= -1;
+			}System.out.println(x);*/
 
+			/*Даны целые числа A и B (A < B). Вывести все целые числа от A до B включительно; при этом
+			число A должно выводиться 1 раз, число A + 1 должно выводиться 2 раза и т. д.*/
+			
+			Scanner in = new Scanner(System.in);
+			System.out.println("Введите число A");
+			int A = in.nextInt();
+			System.out.println("Введите число B:");
+			int B = in.nextInt();
+			for(int i = A;i<=B;i++){
+				for(int j = A-1;j<i;j++){
+					System.out.print(i + " ");
+				}
+			}
 
         // 8 lesson massive
         //Math.random()
