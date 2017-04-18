@@ -1,4 +1,5 @@
 package dztask1stlesson;
+import java.util.Random;
 import java.util.Scanner;
 public class tasks1 {
 
@@ -542,9 +543,9 @@ public class tasks1 {
     	/*Дано целое число N (> 1). Если оно является простым, то есть не имеет положительных
     	делителей, кроме 1 и самого себя, то вывести True, иначе вывести False.*/
     	
-			Scanner in = new Scanner(System.in);
+			/*Scanner in = new Scanner(System.in);
 			System.out.println("Введите число N>1:");
-			int N = in.nextInt();
+			int N = in.nextInt();*/
 
         // 8 lesson massive
         //Math.random()
@@ -578,17 +579,30 @@ public class tasks1 {
 			}*/
 
 			/*2. Дан массив размера N. Вывести его элементы в обратном порядке. */
-      // доделать
+      // проверить
 /*        Scanner in = new Scanner(System.in);
         System.out.println("Введите число n(колличество чисел):");
         int N = in.nextInt();
         int [] mas = new int[N];
         for(int i = 0; i<N; i++){
-            mas[i]=i;
-            //System.out.print(mas[i]+" ");
+        	mas[i]=i;
         }
-        for(int i = 0;i!=0;i--){
+        for(int i = N-1;i>=0;i--){
             System.out.print(mas[i]+" ");
         }*/
+    	
+    	//Дан массив размера N. Найти минимальный и максимальный элементы.
+    	
+    	 Scanner in = new Scanner(System.in);
+         System.out.println("Введите число N(lenth.mas):");
+         int N = in.nextInt();
+         int [] mas = new int[N]; 
+         for(int i = 0; i<N; i++){
+         	mas[i]=i;
+         }
+         System.out.println("Min el.mas" +" " + mas[0]);
+         for(int i = N-1;i>=0;i--){
+    }     
+         System.out.println("Max el.mas" +" " + mas[N-1]);
     }
 }
