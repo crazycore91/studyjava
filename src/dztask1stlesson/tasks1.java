@@ -593,16 +593,96 @@ public class tasks1 {
     	
     	//Дан массив размера N. Найти минимальный и максимальный элементы.
     	
-    	 Scanner in = new Scanner(System.in);
+   /* 	 Scanner in = new Scanner(System.in);
          System.out.println("Введите число N(lenth.mas):");
          int N = in.nextInt();
-         int [] mas = new int[N]; 
-         for(int i = 0; i<N; i++){
-         	mas[i]=i;
-         }
-         System.out.println("Min el.mas" +" " + mas[0]);
-         for(int i = N-1;i>=0;i--){
-    }     
-         System.out.println("Max el.mas" +" " + mas[N-1]);
+         int [] mas = new int[N]; //создали массив, длинной N
+         int minValue = 0; // создали дополнительные переменные с начальными номерами значений переменных - 0
+         int maxValue = 0;
+         for(int i = 0; i<mas.length; i++){
+ 		 mas[i]=(int)(Math.random()*30)+20;  //массив c длинной i заполнили рандомными числами 
+ 		 if (mas[minValue]>mas[i]){           // если индекс(номер) минимального значения > индекса i 
+ 			minValue = i;                     // приравниваем значение i к минимальному
+ 		 }
+ 		 if(mas[maxValue]<mas[i]){
+ 			maxValue = i;  
+ 		 }
+    }
+         System.out.println("Min is: " + " " + mas[minValue] + " "+ "Max is: " + " " + mas[maxValue] + ";" );*/ 
+    	
+    	/*Дан целочисленный массив размера N. Вывести вначале все
+    	содержащиеся в данном массиве четные числа в порядке возрастания их
+    	индексов, а затем — все нечетные числа в порядке убывания их индексов.
+    	Также вывести количество четных и нечетных членов массива. */
+    	
+    /*	Scanner in = new Scanner(System.in);
+        System.out.println("Введите число N(lenth.mas):");
+        int N = in.nextInt();
+        int [] mas = new int[N];
+        for(int i = 0; i<mas.length; i++){
+    		 mas[i]=(int)(Math.random()*35)+15;
+        }
+        for(int i = 0; i<N; i++){
+        	if(mas[i] % 2 == 0){
+        	System.out.println(mas[i]+" ");}
+        }
+        for(int i = N-1;i>=0;i--){
+        	if(mas[i] % 2!= 0){
+            System.out.println(mas[i]+" ");}
+        }*/
+    	
+    	/*Даны два массива A и B одинакового размера N.
+    	Сформировать новый массив C того же размера, каждый
+    	элемент которого равен максимальному из элементов
+    	массивов A и B с тем же индексом. */
+    	//доделать
+    /*	Scanner in = new Scanner(System.in);
+        System.out.println("Введите число N(lenth.mas):");
+        int N = in.nextInt();
+        int [] mas1 = new int[N];
+        int [] mas2 = new int[N];
+        for(int i = 0; i<mas1.length; i++){
+   		 mas1[i]=(int)(Math.random()*35)+15;
+   		 mas2[i]=(int)(Math.random()*28)+14;
+   		 mas2[i]=i;
+       }
+        int [] mas3 = new int[N];
+        for(int i = 0; i<mas1.length; i++){
+        	System.out.println(mas3[i]+" ");
+        }*/
+        
+    	// Сортировка выбором 
+    	int[] arr = {4, 4, 9, 2, 310,5};// По очереди будем просматривать все подмножества элементов массива (0 - последний, 1-последний, 2-последний,...)*/
+    	 for (int i = 0; i < arr.length; i++) {  //Предполагаем, что первый элемент (в каждом подмножестве элементов) является минимальным
+    	 int min = arr[i];
+    	 int max = arr[i];
+    	 int min_i = i;//В оставшейся части подмножества ищем элемент,который меньше предположенного минимума
+    	 int max_i = i;
+    	 for (int j = i+1; j < arr.length-i; j++) {  //Если находим, запоминаем его индекс
+    	 if (arr[j] < min) {
+    	 min = arr[j];
+    	 min_i = j;
+    	 }
+    	 if (arr[j] < max) {
+        	 max = arr[j];
+        	 max_i = j;
+        	 }
+    } //Если нашелся элемент, меньший, чем на текущей позиции, меняем их местами
+    	 if (i != min_i) {
+    	 int tmp = arr[i];
+    	 arr[i] = arr[min_i];
+    	 arr[min_i] = tmp;
+    	 }
+        	 if (i != max_i) {
+        	 int tmp = arr[i];
+        	 arr[i] = arr[max_i];
+        	 arr[max_i] = tmp;
+    	 }
+    	 }
+    	 
+    	 for(int i = 0;i < arr.length;i++){
+    		 System.out.println(arr[i]  );
+    	 }
+    	 
     }
 }
